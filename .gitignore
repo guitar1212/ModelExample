@@ -4,6 +4,9 @@
 Temp/
 Library/
 
+*.unitypackage
+*.apk
+
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
