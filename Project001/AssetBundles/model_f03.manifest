@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1195056363
+CRC: 1966881869
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: cc9750eed88a566907e95341f6d5b0e2
+    Hash: de1a5d79dd15e2ef17b1400d353db1fe
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 8e42d7393dcc3692a8ed4e762742f7f4
+    Hash: 35cc2e24b17eb43b6b86b8ba4720f284
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -25,6 +25,10 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: b24090ae899310242bcd2f89aa75068e, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
 Assets:
-- Assets/Prefabs/Models/Female/F03.prefab
+- Assets/Prefabs/Models/Female/F003.prefab
 Dependencies: []
