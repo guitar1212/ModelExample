@@ -45,4 +45,19 @@ public class ModelManager : MonoBehaviour {
 
 		currentModel = Instantiate (models [modexIdx]);
 	}
+
+	public void PreModel()
+	{
+		if (currentModel) {
+			Destroy (currentModel.gameObject);
+			currentModel = null;
+		}
+		
+		modexIdx--;
+		
+		if (modexIdx < 0)
+			modexIdx = models.Length - 1;
+		
+		currentModel = Instantiate (models [modexIdx]);
+	}
 }

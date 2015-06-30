@@ -660,6 +660,8 @@ MonoBehaviour:
   - {fileID: 490534, guid: 66851f72d5d3b2348b01055c0629906b, type: 2}
   - {fileID: 419642, guid: be5034038f6fc164d917d2e26ded7c81, type: 2}
   - {fileID: 448436, guid: 1d5a8d69cd7910846ad755944825fab8, type: 2}
+  - {fileID: 499126, guid: 249e28ecc9be01f47aa15a7f428d354e, type: 2}
+  - {fileID: 436036, guid: ee893f7f4d8e4a149af0303c753d7ea9, type: 2}
 --- !u!1 &709681608
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,7 +875,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 952393682}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 581376293}
+        m_MethodName: PreModel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &952393682
