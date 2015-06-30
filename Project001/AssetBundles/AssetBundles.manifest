@@ -1,0 +1,12 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: model_f01
+      Dependencies: {}
+    Info_1:
+      Name: model_f02
+      Dependencies: {}
+    Info_2:
+      Name: model_f03
+      Dependencies: {}
