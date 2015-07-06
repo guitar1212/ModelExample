@@ -10,3 +10,9 @@ AssetBundleManifest:
     Info_2:
       Name: model_f03
       Dependencies: {}
+    Info_3:
+      Name: model_f04
+      Dependencies: {}
+    Info_4:
+      Name: model_f05
+      Dependencies: {}
