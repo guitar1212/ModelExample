@@ -1,0 +1,8 @@
+# File created by ZBrush
+# ToolType: PolyMesh3D
+# www.zbrush.com
+newmtl defaultMat
+Ka 1 1 1 1
+Kd 1 1 1 1
+Ks 0 0 0 1
+map_Kd A0816_low.jpg

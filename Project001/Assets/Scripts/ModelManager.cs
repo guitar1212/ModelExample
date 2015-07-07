@@ -3,11 +3,13 @@ using System.Collections;
 
 public class ModelManager : MonoBehaviour {
 
-	public Transform currentModel;
+	public GameObject initModel;
 
 	public Transform target;
 
 	public Transform[] models;
+
+	private Transform currentModel;
 
 	private int modexIdx = 0;
 
@@ -16,9 +18,9 @@ public class ModelManager : MonoBehaviour {
 
 		modexIdx = 0;
 
-		if (currentModel && target) {
-
-		}
+		// for test
+		modexIdx = 5;
+		currentModel = Instantiate (models [modexIdx]);
 	}
 	
 	// Update is called once per frame
@@ -43,7 +45,7 @@ public class ModelManager : MonoBehaviour {
 		if (modexIdx >= models.Length)
 			modexIdx = 0;
 
-		currentModel = Instantiate (models [modexIdx]);
+		currentModel = Instantiate<Transform> (models [modexIdx]);
 	}
 
 	public void PreModel()
@@ -58,6 +60,14 @@ public class ModelManager : MonoBehaviour {
 		if (modexIdx < 0)
 			modexIdx = models.Length - 1;
 		
-		currentModel = Instantiate (models [modexIdx]);
+		currentModel = Instantiate<Transform> (models [modexIdx]);
+	}
+
+	public void toggleRotation()
+	{
+		if (currentModel) {
+			AutoRotate ar = currentModel.GetComponent<AutoRotate>();
+			ar.enabled = !ar.enabled;
+		}
 	}
 }
