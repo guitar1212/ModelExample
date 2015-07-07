@@ -16,3 +16,6 @@ AssetBundleManifest:
     Info_4:
       Name: model_f05
       Dependencies: {}
+    Info_5:
+      Name: model_f06.0
+      Dependencies: {}

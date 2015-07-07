@@ -16,11 +16,10 @@ public class ModelManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		modexIdx = 0;
-
+		//modexIdx = 0;
 		// for test
 		modexIdx = 5;
-		currentModel = Instantiate (models [modexIdx]);
+		currentModel = (Transform)Instantiate(models [modexIdx]);
 	}
 	
 	// Update is called once per frame
@@ -45,7 +44,7 @@ public class ModelManager : MonoBehaviour {
 		if (modexIdx >= models.Length)
 			modexIdx = 0;
 
-		currentModel = Instantiate<Transform> (models [modexIdx]);
+		currentModel = (Transform)Instantiate(models [modexIdx]);
 	}
 
 	public void PreModel()
@@ -60,7 +59,7 @@ public class ModelManager : MonoBehaviour {
 		if (modexIdx < 0)
 			modexIdx = models.Length - 1;
 		
-		currentModel = Instantiate<Transform> (models [modexIdx]);
+		currentModel = (Transform)Instantiate(models [modexIdx]);
 	}
 
 	public void toggleRotation()
